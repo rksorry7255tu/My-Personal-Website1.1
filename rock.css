@@ -65,7 +65,7 @@ img{
 #msg{
    
     font-size: 2rem;
-    background-color: #081b31;
+    /* background-color: #081b31; */
     color: #fff;
    display: inline;
    /* padding:1rem; */
