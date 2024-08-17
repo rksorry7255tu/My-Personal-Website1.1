@@ -68,7 +68,7 @@ img{
     background-color: #081b31;
     color: #fff;
    display: inline;
-   padding:1rem;
+   /* padding:1rem; */
    border-radius:1rem;
 }
 #user-score, #comp-score{
