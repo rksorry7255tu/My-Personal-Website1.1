@@ -26,7 +26,6 @@ boxes.forEach((box) =>{
 
         }else{
             box.innerText="O";
-            
             turnO=true;
         }
         count++;
