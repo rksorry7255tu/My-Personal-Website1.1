@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab_box">
+            <button  class="tab_btn"> <li style=" list-style-type: none;" ><a href="ticgame.html">Project1</a></li></button>
+            <button class="tab_btn"><li style=" list-style-type: none;"><a href="rockindex.html">Project2</a></li></button>
+            <button class="tab_btn"><li style=" list-style-type: none;"><a href="ticgame.html">Project3</a></li></button>
+           
+            <!-- <div class="line"></div> -->
+        </div>
+        <li style=><a style="font-size: 2rem; list-style-type: none;" href="index.html">Home</a></li>
+
+        <div class="content_box">
+            <div class="content">
+                <h2>Tic Tac Toe</h2>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nihil voluptatum ex ratione provident alias nam recusandae ipsum, est saepe quis, excepturi autem labore numquam incidunt hic aspernatur delectus! Temporibus.
+                </p> -->
+            </div>
+            <div class="content">
+                <h2>Rock Paper Scissors</h2>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nihil voluptatum ex ratione provident alias nam recusandae ipsum, est saepe quis, excepturi autem labore numquam incidunt hic aspernatur delectus! Temporibus.
+                </p> -->
+            </div>
+            <div class="content">
+                
+                <h2>Amazon</h2>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nihil voluptatum ex ratione provident alias nam recusandae ipsum, est saepe quis, excepturi autem labore numquam incidunt hic aspernatur delectus! Temporibus.
+                </p> -->
+            </div>
+        </div>
+    </div>
+<script>
+     const tabs=document.querySelectorAll('.tab_btn');
+     const all_content=document.querySelectorAll('.content');
+     
+    tabs.forEach((tab,index)=>{
+        tab.addEventListener('click',()=>{
+            tabs.forEach((tab)=>{
+                tab.classList.remove('active');
+                
+            });
+            
+            tab.classList.add('active');
+           
+
+        all_content.forEach(content=>{content.classList.remove('active')})
+        
+        all_content[index].classList.add('active');
+       
+        }) 
+    })
+</script>
+
+</body>
+</html>
