@@ -12,7 +12,7 @@ const genCompChoice=()=>{
 };
 
 const drawGame =()=>{
-    msg.innerText="game was draw, Play again!!!";
+    msg.innerText="Game was draw, Play again!!!";
     msg.style.backgroundColor="#081b31";
 }
 const showWinner=(userWin,userChoice,compChoice)=>{
